@@ -1,0 +1,60 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-fundo-secundaria);
+    box-shadow: 0 8px 8px var(--cor-sombra);
+}
+
+.cabecalho__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho__icone {
+    padding: 1rem;
+}
+
+.cabecalho__menu-hamburguer {
+    background-image: url(../images/Menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__botao:checked ~ .container__lista{ /* quando o container__botao estiver checked, os proximos irmaos do container__botao que tem a classe container__lista receberão display block - ver mais sobre combinadores CSS*/
+    display: block;
+}
+
+.container__lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: var(--cor-fundo-secundaria);
+    width: 65vw;
+    box-shadow: 0 8px 8px var(--cor-sombra);
+}
+
+.lista__titulo {
+    color: var(--cor-fonte-secundaria);
+    font-weight: 700;
+}
+
+.lista__item {
+    padding: 1rem;
+}
+
+.lista__item a {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--cor-fonte-primaria);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

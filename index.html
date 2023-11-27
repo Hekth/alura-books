@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Books</title>
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <!-- dividindo divs de acordo com a posição do conteúdo - esqueda e direita-->
+        <div class="cabecalho__container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="cabecalho__icone">
+                <span class="cabecalho__icone cabecalho__menu-hamburguer"></span>
+            </label>
+            <ul class="container__lista">
+                <li class="lista__titulo lista__item">Categorias</li>
+                <li class="lista__item"><a href="#">Programação</a></li>
+                <li class="lista__item"><a href="#">Front-end</a></li>
+                <li class="lista__item"><a href="#">Infraestrutura</a></li>
+                <li class="lista__item"><a href="#">Business</a></li>
+                <li class="lista__item"><a href="#">Design & UX</a></li>
+            </ul>
+            <img class="cabecalho__icone" src="images/Logo.png" alt="logo do alura books">
+        </div>
+        <div class="cabecalho__container">
+            <img class="cabecalho__icone" src="images/Coracao.png" alt="icone de coração">
+            <img class="cabecalho__icone" src="images/Sacola.png" alt="ícone de uma sacola">
+            <img class="cabecalho__icone" src="images/Usuario.png" alt="ícone de um usuário">
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__subtitulo">
+            Já sabe por onde começar?
+        </h2>
+        <p class="banner__texto">
+            Encontre em nossa estante o que precisa para seu desenvolvimento!
+        </p> 
+        <input class="banner__input" type="text" placeholder="Qual será sua próxima leitura?">
+    </section>
 </body>
 </html>
