@@ -39,6 +39,7 @@
     background-color: var(--cor-fundo-secundaria);
     width: 65vw;
     box-shadow: 0 8px 8px var(--cor-sombra);
+    z-index: 1;
 }
 
 .lista__titulo {

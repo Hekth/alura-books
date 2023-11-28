@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <meta charset="UTF-8">
@@ -40,6 +41,100 @@
             Encontre em nossa estante o que precisa para seu desenvolvimento!
         </p> 
         <input class="banner__input" type="text" placeholder="Qual será sua próxima leitura?">
+        
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__subtitulo">
+            Últimos lançamentos
+        </h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/ApacheKafka.png" alt="livro sobre apache kafka da alura">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Nodejs.png" alt="livro sobre nodejs">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/MetricasAgeis.png" alt="livro sobre metricas ageis">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Tuning.png" alt="livro sobre sql">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/ReactNative.png" alt="livro sobre react native">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Javascript.png" alt="livro sobre javascript">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/UX.png" alt="livro sobre UX">
+                </div>
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+        
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+        <div class="card">
+            <div class="card__descricao">
+                <h3 class="descricao__subtitulo">
+                    Talvez você também se interesse por...
+                </h3>
+                <h2 class="descricao__titulo">
+                    Angular 11 e Firebase
+                </h2>
+                <p class="descricao__texto">
+                    Construindo uma aplicação integrada com a plataforma do Google.
+                </p>
+                <div class="descricao__icones">
+                    <img src="images/Coracao.png" alt="ícone de coração">
+                    <img src="images/Sacola.png" alt="ícone de uma sacola">
+                </div>
+            </div>
+            <div class="card__logo">
+                <img src="images/Angular.png" alt="logo do angular">
+                <a href="https://angular.io" target="_blank" class="logo__link">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            speed: 500,
+            spaceBetween: 30,
+            slidesPerView: 2,
+            autoplay: {
+                delay: 5000,
+            },
+            // Navigation arrows
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+        });
+    </script>
 </body>
 </html>
