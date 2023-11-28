@@ -25,6 +25,7 @@
     background-color: transparent;
     border-radius: 1.5rem;
     color: var(--cor-fundo-secundaria);  
+    outline: none;
 }
 
 .banner__input::placeholder { /* acredito que os :: seja uma forma de acessar atributos de elementos*/
@@ -33,8 +34,4 @@
     font-size: 0.875rem;
     background: url(../images/Pesquisa.svg) no-repeat;
     background-position: 12% 50%; /* 0% 0% --> canto superior esquerdo, 100% 100% canto inferior direito - o primeiro atributo refere-se ao eixo horizontal enquanto que o segundo atributo ao eixo vertical*/
-}
-
-.banner__input:focus {
-    outline: none;
 }
