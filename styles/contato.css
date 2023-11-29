@@ -49,16 +49,22 @@
         gap: 4rem;
     }
 
-    .contato__container {
+    .contato__container, .contato__email {
         width: 30%;
     }
 
     .contato__subtitulo {
         font-size: 1.5rem;
     }
-    
-    .contato__email {
-        width: 30%;
+}
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        gap: 0;
+        padding: 4rem 0;
     }
-    
+
+    .contato__container, .contato__email {
+        width: 20%;
+    }
 }

@@ -47,3 +47,13 @@ hr {
         color: var(--cinza);
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .rodape {
+        padding: 1.5rem 7rem;
+    }
+    .rodape__lista {
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1.5rem;
+    }
+}

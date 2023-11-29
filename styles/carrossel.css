@@ -130,8 +130,40 @@
         width: 50%;
         margin: 3rem auto;
     }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__container {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        padding: 5rem;
+    }
+
+    .swiper, .card {
+        width: 35%;
+        margin: 0;
+    }
+
+    .swiper-pagination {
+        padding: 1rem 0;
+    }
 
     .card__descricao {
-        
+        justify-content: space-around;
+        width: 60%;
+    }
+
+    .descricao__subtitulo {
+        font-size: 2rem;
+    }
+
+    .card__logo {
+        gap: 1rem;
+        width: 30%;
+    }
+
+    .logo__link:hover {
+        background-color: #b17600;
     }
 }

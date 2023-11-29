@@ -18,7 +18,7 @@
 .cabecalho__menu-hamburguer {
     background-image: url(../images/Menu.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0 50%;
     width: 24px;
     height: 24px;
 }
@@ -29,6 +29,14 @@
 
 .container__botao:checked ~ .container__lista{ /* quando o container__botao estiver checked, os proximos irmaos do container__botao que tem a classe container__lista receberão display block - ver mais sobre combinadores CSS*/
     display: block;
+}
+
+.container__botao:checked ~.cabecalho__label {
+    background: var(--cor-fonte-primaria);
+}
+
+.container__botao:checked ~.cabecalho__label .cabecalho__menu-hamburguer {
+    background-image: url(../images/MenuAberto.png);
 }
 
 .container__lista {
@@ -67,6 +75,10 @@
     display: block;
 }
 
+.container__link p {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
     .icone__coracao, .cabecalho__label {
         display: none;
@@ -95,22 +107,64 @@
 
     .cabecalho__lista__item {
         cursor: pointer;
+        padding: 1.8rem 1rem;
     }
 
     .cabecalho__lista__item a {
+        
         color: var(--preto);
         text-decoration: none;
+    }
+
+    .lista__item:hover {
+        background: var(--cor-fonte-primaria);
+    }
+
+    .lista__item:hover a {
+        -webkit-text-fill-color: white;
     }
 
     .lista__botao:checked ~ .container__lista {
         display: block;
     }
+    
+    .lista__botao:checked ~ .cabecalho__lista__label {
+        background: var(--cor-fonte-primaria);
+        color: var(--cor-fundo-secundaria);
+    }
 
-    .lista__botao {
+    .lista__botao, .container__link p {
         display: none;
     }
 
     .container__lista {
         width: auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link p {
+        display: block;
+    }
+    
+    .cabecalho {
+        padding: 0 5rem;
+    }
+
+    .cabecalho__lista {
+        margin-right: auto;
+        padding-left: 3rem;
+    }
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: var(--preto);
+    }
+
+    .cabecalho__container-segundo {
+        gap: 3.5rem;
     }
 }
