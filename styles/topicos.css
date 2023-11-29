@@ -29,3 +29,24 @@
     font-size: 0.875rem;
     font-weight: 700;
 }
+
+@media screen and (min-width: 1024px) {
+    .topicos__subtitulo {
+        font-size: 1.5rem;
+        padding: 2rem 0 2.5rem 0;
+    }
+
+    .topicos__lista {
+        width: 80%;
+        margin: auto;
+        gap: 1.5rem;
+    }
+
+    .topicos__lista__item {
+        padding: 1.5rem 2rem;
+    }
+
+    .topicos__lista__item a {
+        font-size: 1.5rem;
+    }
+}

@@ -22,6 +22,10 @@
     box-shadow: 5px 0 8px var(--cor-sombra);
 }
 
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
 .card {
     display: flex;
     justify-content: space-between;
@@ -75,6 +79,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 3rem;
     margin-bottom: 0.5rem;
 }
 
@@ -88,6 +93,45 @@
 }
 
 .descricao__estrelas {
-    width: 50%;
+    width: 90px;
     padding: 0.5rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__subtitulo {
+        font-size: 1.625rem;
+        padding: 3.125rem 0 1rem 0;
+    }
+
+    .swiper {
+        width: 55%;
+    }
+
+    .swiper-pagination {
+        padding: 1.25rem 0 3.5rem 0;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        top: 55%;
+        --swiper-navigation-size: 10px;
+        --swiper-navigation-top-offset: 50%;
+        --swiper-navigation-sides-offset: 10px;
+        --swiper-navigation-color: #FFFFFF;
+        background: var(--cor-fonte-primaria);
+        padding: 1rem;
+        border-radius: 50%;
+        box-shadow: 0 4px 4px 0 var(--cor-sombra);
+    }
+
+    .card {
+        width: 50%;
+        margin: 3rem auto;
+    }
+
+    .card__descricao {
+        
+    }
 }

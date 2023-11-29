@@ -13,7 +13,7 @@
         <!-- dividindo divs de acordo com a posição do conteúdo - esqueda e direita-->
         <div class="cabecalho__container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu" class="cabecalho__icone">
+            <label for="menu" class="cabecalho__icone cabecalho__label">
                 <span class="cabecalho__icone cabecalho__menu-hamburguer"></span>
             </label>
             <ul class="container__lista">
@@ -24,10 +24,27 @@
                 <li class="lista__item"><a href="#">Business</a></li>
                 <li class="lista__item"><a href="#">Design & UX</a></li>
             </ul>
+
             <img class="cabecalho__icone" src="images/Logo.png" alt="logo do alura books">
+            <h1 class="cabecalho__titulo"><b class="titulo__negrito">Alura</b> Books</h1>
         </div>
+        <ul class="cabecalho__lista">
+            <input type="checkbox" id="categoria__botao" class="lista__botao">
+            <label for="categoria__botao">
+                <li class="cabecalho__lista__item">Categorias</li>
+            </label>
+            <ul class="container__lista">
+                <li class="lista__item"><a href="#">Programação</a></li>
+                <li class="lista__item"><a href="#">Front-end</a></li>
+                <li class="lista__item"><a href="#">Infraestrutura</a></li>
+                <li class="lista__item"><a href="#">Business</a></li>
+                <li class="lista__item"><a href="#">Design & UX</a></li>
+            </ul>
+            <li class="cabecalho__lista__item"><a href="#">Favoritos</a></li>
+            <li class="cabecalho__lista__item"><a href="#">Minha estante</a></li>
+        </ul>
         <div class="cabecalho__container">
-            <img class="cabecalho__icone" src="images/Coracao.png" alt="icone de coração">
+            <img class="cabecalho__icone icone__coracao" src="images/Coracao.png" alt="icone de coração">
             <img class="cabecalho__icone" src="images/Sacola.png" alt="ícone de uma sacola">
             <img class="cabecalho__icone" src="images/Usuario.png" alt="ícone de um usuário">
         </div>
@@ -80,8 +97,8 @@
             </div>
         
             <!-- If we need navigation buttons -->
-            <!-- <div class="swiper-button-prev"></div> -->
-            <!-- <div class="swiper-button-next"></div> -->
+            <div class="swiper-button-prev"></div> 
+            <div class="swiper-button-next"></div> 
         
             <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->
@@ -136,6 +153,8 @@
                     <img src="images/MEAN.png" alt="livro MEAN">
                 </div>
             </div>
+            <div class="swiper-button-prev"></div> 
+            <div class="swiper-button-next"></div> 
         </div>
         <div class="card">
             <div class="card__descricao">
@@ -170,12 +189,14 @@
     </section>
 
     <section class="contato">
-        <h2 class="contato__subtitulo">
-            Fique por dentro das novidades!
-        </h2>
-        <p class="contato__texto">
-            Atualizações de e-books, novos livros, promoções e outros.
-        </p>
+        <div class="contato__container">
+            <h2 class="contato__subtitulo">
+                Fique por dentro das novidades!
+            </h2>
+            <p class="contato__texto">
+                Atualizações de e-books, novos livros, promoções e outros.
+            </p>
+        </div>
         <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
     </section>
 
@@ -196,12 +217,17 @@
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
+                clickable: true,
             },
             speed: 500,
             spaceBetween: 30,
-            slidesPerView: 2,
+            slidesPerView: 3,
             autoplay: {
                 delay: 5000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
             // Navigation arrows
 

@@ -26,12 +26,30 @@
     border-radius: 1.5rem;
     color: var(--cor-fundo-secundaria);  
     outline: none;
+    font-family: var(--fonte-primaria);
 }
 
 .banner__input::placeholder { /* acredito que os :: seja uma forma de acessar atributos de elementos*/
-    font-family: var(--fonte-primaria);
     color: var(--cor-fundo-secundaria);
     font-size: 0.875rem;
     background: url(../images/Pesquisa.svg) no-repeat;
     background-position: 12% 50%; /* 0% 0% --> canto superior esquerdo, 100% 100% canto inferior direito - o primeiro atributo refere-se ao eixo horizontal enquanto que o segundo atributo ao eixo vertical*/
+}
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        padding: 5.25rem 0;
+    }
+
+    .banner__subtitulo {
+        font-size: 2.25rem;
+    }
+
+    .banner__input {
+        width: 50%;
+    }
+
+    .banner__input::placeholder {
+        background-position: 24% 50%;
+    }
 }

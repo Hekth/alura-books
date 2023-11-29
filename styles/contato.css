@@ -39,3 +39,26 @@
     padding-left: 3rem;
     color: var(--cor-fonte-terciaria);
 }
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0 3rem 0;
+        gap: 4rem;
+    }
+
+    .contato__container {
+        width: 30%;
+    }
+
+    .contato__subtitulo {
+        font-size: 1.5rem;
+    }
+    
+    .contato__email {
+        width: 30%;
+    }
+
+}
