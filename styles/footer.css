@@ -5,3 +5,45 @@ hr {
 .rodape {
     padding: 1.125rem 1.5rem 1.5rem 1.5rem;
 }
+
+.rodape__lista {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape__lista {
+        display: block;
+    }
+    
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .rodape__titulo {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .rodape__lista {
+        font-size: 0.825rem;
+        margin-top: 3rem;
+    }
+
+    .rodape__lista__titulo {
+        color: var(--cinza-claro);
+        text-transform: uppercase;
+    }
+
+    .rodape__lista__item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .rodape__lista__item a {
+        text-decoration: none;
+        color: var(--cinza);
+    }
+}

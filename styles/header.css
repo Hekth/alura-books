@@ -93,6 +93,10 @@
         align-items: center;
     }
 
+    .cabecalho__lista__item {
+        cursor: pointer;
+    }
+
     .cabecalho__lista__item a {
         color: var(--preto);
         text-decoration: none;

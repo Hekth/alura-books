@@ -35,8 +35,8 @@
 
 .contato__email::placeholder {
     background: url(../images/Email.png) no-repeat;
-    background-position: 5% 50%;
-    padding-left: 3rem;
+    background-position: 0 50%;
+    padding-left: 2rem;
     color: var(--cor-fonte-terciaria);
 }
 
@@ -60,5 +60,5 @@
     .contato__email {
         width: 30%;
     }
-
+    
 }
