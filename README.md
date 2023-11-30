@@ -36,6 +36,7 @@
 <ul>
   <li>
     A partir 360px - Celulares (tela padrão)
+    <br>
     <img src="https://github.com/Hekth/alura-books/assets/151862970/b82fe985-f681-499e-8243-1c6565144454">
   </li>
   <li>
