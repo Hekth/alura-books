@@ -36,15 +36,15 @@
 <ul>
   <li>
     A partir 360px - Celulares (tela padrão)
-    ![Captura de Tela (148)](https://github.com/Hekth/alura-books/assets/151862970/b82fe985-f681-499e-8243-1c6565144454)
+    <img src="https://github.com/Hekth/alura-books/assets/151862970/b82fe985-f681-499e-8243-1c6565144454">
   </li>
   <li>
     A partir 1024px -Tablets
-    ![Captura de Tela (149)](https://github.com/Hekth/alura-books/assets/151862970/e2d52d20-9557-4d34-84b6-ad86b0d58d7f)
+    <img src="https://github.com/Hekth/alura-books/assets/151862970/e2d52d20-9557-4d34-84b6-ad86b0d58d7f">
   </li>
   <li>
     A partir 1728px - Desktops
-    ![Captura de Tela (150)](https://github.com/Hekth/alura-books/assets/151862970/6e727229-245e-4e35-8535-8eade7c98c91)
+     <img src="https://github.com/Hekth/alura-books/assets/151862970/6e727229-245e-4e35-8535-8eade7c98c91">
   </li>
 </ul>
 
